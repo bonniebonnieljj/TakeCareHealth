@@ -1,3 +1,3 @@
 <template>
-    <div>reference</div>
+  <div>reference</div>
 </template>

@@ -1,7 +1,14 @@
 <template>
   <div id="tch-navigator">
-    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-      <el-menu-item v-for="item in navList" :index="item" :key="item.title">{{ item.title }}</el-menu-item>
+    <el-menu
+      :default-active="activeIndex"
+      class="el-menu-demo"
+      mode="horizontal"
+      @select="handleSelect"
+    >
+      <el-menu-item v-for="item in navList" :index="item" :key="item.title">{{
+        item.title
+      }}</el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -45,7 +52,7 @@ export default {
 .navigator-items {
   display: inline-block;
 }
-#tch-navigator{
+#tch-navigator {
   padding: 0 20px;
 }
 </style>
