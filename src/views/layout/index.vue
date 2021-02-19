@@ -1,8 +1,10 @@
 <template>
   <div id="layout">
     <header id="header">
+      <user-info></user-info>
       <navigator />
     </header>
+
     <main id="main">
       <router-view />
     </main>
@@ -11,11 +13,12 @@
 </template>
 <script>
 import navigator from "./navigator";
+import userInfo from "./userInfo";
 export default {
   data() {
     return {};
   },
-  components: { navigator }
+  components: { navigator, userInfo }
 };
 </script>
 <style lang="scss" scoped>
@@ -25,6 +28,7 @@ export default {
   display: flex;
   flex-direction: column;
   #header {
+    position: relative;
     /*height: 50px;*/
   }
   #main {

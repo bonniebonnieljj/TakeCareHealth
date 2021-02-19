@@ -5,6 +5,7 @@ import store from "./store";
 import ElementUI from "element-ui";
 import locale from "element-ui/lib/locale/lang/zh-CN";
 import "./styles.scss";
+import "@/style/index.scss";
 Vue.use(ElementUI, { locale })
 
 Vue.config.productionTip = false;

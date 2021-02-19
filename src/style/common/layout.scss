@@ -1,0 +1,13 @@
+@mixin layout-flex-column {
+  display: flex;
+  flex-direction: column;
+  & section, >div {
+    flex: 1;
+    &:first-child {
+      flex: none  ;
+    }
+  }
+}
+.layout-flex-column{
+  @include layout-flex-column;
+}
