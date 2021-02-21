@@ -5,11 +5,17 @@
             <div class="cir-chart" ref="cirChart"></div>
         </section>
         <!--<section class="cir" ref="cirChart"></section>-->
-        <section class="det"></section>
+        <section class="det">
+            <div class="det-title">相关疾病</div>
+            <div class="det-egs">
+
+            </div>
+        </section>
     </div>
 </template>
 
 <script>
+  import "@/components"
   // import echarts from 'echarts'
   const echarts = require("echarts")
   // import * as echarts from 'echarts/core';
@@ -20,12 +26,20 @@
     legend: {
       orient: 'vertical',
       left: 'right',
+      top: 'middle',
+      itemGap: 15,
+      textStyle: {
+        fontSize: 16
+      }
     },
     series: [
       {
         name: '访问来源',
         type: 'pie',
         radius: '50%',
+        label: {
+          fontSize: 16
+        },
         data: [
           {value: 1048, name: '搜索引擎'},
           {value: 735, name: '直接访问'},
@@ -72,17 +86,18 @@
         display: flex;
         position: relative;
         margin-top: 30px;
-        .cir{
+        .cir, .det{
             position: relative;
             width: 50%;
             /*background-color: pink;*/
             padding-left: 20px;
-            .cir-title{
+            .cir-title, .det-title{
+                font-size: 26px;
                 text-align: left;
             }
         .cir-chart{
             width: 100%;
-            height: 500px;
+            height: 700px;
         }
         }
         /*.cir{*/
