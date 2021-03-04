@@ -1,11 +1,25 @@
+// import Vue from "vue";
+import egs from './egs'
 
-const requireContext = require("require-context")
-console.log([requireContext])
-const files = requireContext("./", false, "/.vue$/");
-// const module = {};
-console.log(files, files.keys());
+const _components = {
+  egs
+}
 
-// export default function registComponents(context) {
-//   const _vue = context;
-//   _vue.component()
+// class registAllComponents extends Vue {
+//   constructor() {
+//     super()
+//     this._component()
+//   }
+//   _component () {
+//     for(let name in _components) {
+//       return this.component(name, _components[name])
+//     }
+//   }
 // }
+// export default new registAllComponents()
+
+export function registAllComponents(context) {
+    for(let name in _components) {
+      context.component(name, _components[name])
+    }
+}

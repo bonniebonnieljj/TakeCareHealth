@@ -8,14 +8,13 @@
         <section class="det">
             <div class="det-title">相关疾病</div>
             <div class="det-egs">
-
+                <egs v-for="(disease, index) in diseaseList" :key="index" :text="disease.text" :toolTipContent="disease.tip"/>
             </div>
         </section>
     </div>
 </template>
 
 <script>
-  import "@/components"
   // import echarts from 'echarts'
   const echarts = require("echarts")
   // import * as echarts from 'echarts/core';
@@ -61,7 +60,20 @@
     name: "resultByFood",
     data() {
       return {
-
+        diseaseList: [
+          {
+            text: '糖尿病',
+            tip: '糖尿病---tips'
+          },
+          {
+            text: '胰腺炎',
+            tip: '胰腺炎---tips'
+          },
+          {
+            text: '高血压',
+            tip: '高血压---tips'
+          }
+        ]
       }
     },
     created() {
@@ -108,6 +120,10 @@
         /*}*/
         .det{
             flex: 1 1 0;
+            .det-egs{
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 </style>
