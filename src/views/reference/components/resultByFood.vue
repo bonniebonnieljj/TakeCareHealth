@@ -16,7 +16,7 @@
 
 <script>
   // import echarts from 'echarts'
-  const echarts = require("echarts")
+  // const echarts = require("echarts")
   // import * as echarts from 'echarts/core';
   const option = {
     tooltip: {
@@ -77,14 +77,16 @@
       }
     },
     created() {
-      console.log('echarts', echarts)
+      // console.log('echarts', echarts)
+      console.log('$echarts', this.$echarts)
       this.init()
     },
     methods: {
       init() {
+        console.log(1)
         this.$nextTick(() => {
           const dom = this.$refs.cirChart;
-          const e = echarts.init(dom);
+          const e = this.$echarts.init(dom);
           e.setOption(option)
           e.resize()
         })

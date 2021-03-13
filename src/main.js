@@ -9,6 +9,9 @@ import "@/style/index.scss";
 import { registAllComponents } from "@/components";
 Vue.use(ElementUI, { locale });
 
+import echarts from 'echarts/lib/echarts'
+Vue.prototype.$echarts = echarts
+
 registAllComponents(Vue);
 
 Vue.config.productionTip = false;
