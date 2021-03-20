@@ -1,7 +1,7 @@
 # 常用命令
-##输出webpack配置
-###开发环境： npm inspect > webpack.dev.config.js --mode=development
-###研发环境： npm inspect > webpack.pro.config.js --mode=production
+## 输出webpack配置
+### 开发环境： npm inspect > webpack.dev.config.js --mode=development
+### 研发环境： npm inspect > webpack.pro.config.js --mode=production
 
 # 开发环境优化
 ## 编译速度  hmr
