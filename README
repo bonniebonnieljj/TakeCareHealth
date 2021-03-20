@@ -4,7 +4,8 @@
 ###研发环境： npm inspect > webpack.pro.config.js --mode=production
 
 # 开发环境优化
-## 编译速度  hmr
+## 编译速度  
+  - [ ] hmr
 ##
 
 # 生产环境优化
