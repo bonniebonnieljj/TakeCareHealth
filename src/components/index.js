@@ -1,6 +1,9 @@
 // import Vue from "vue";
+// import stts from './static/vendor.dll'
+// import stta from './static/vue.dll'
+// const ty = typeof stts
+// const ta = typeof stta
 import egs from './egs'
-
 const _components = {
   egs
 }

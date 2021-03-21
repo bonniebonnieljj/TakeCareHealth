@@ -39,6 +39,7 @@
     "prettier": "^1.19.1",
     "require-context": "^1.1.0",
     "sass-loader": "^8.0.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-cli-plugin-element-ui": "~1.1.4",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.46.0",
@@ -73,5 +74,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "sideEffects": ["*.css", "@babel/polyfill"]
 }

@@ -30,7 +30,7 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
-    background: pink center url('../../assets/logo.png') no-repeat;
+    background: pink center url('../../../public/assets/logo.png') no-repeat;
 }
 .user-name{
     font-size: 14px;

@@ -1,3 +1,9 @@
+## 启动
+* 安装依赖包 npm install
+* 测试 dll npm run dll  想跳过这一步，需要将public里面的引用dll去除
+* 启动 npm run serve
+
+
 ## 打包优化
 ### 输出webpack配置
 * 开发环境： npm inspect > webpack.dev.config.js --mode=development

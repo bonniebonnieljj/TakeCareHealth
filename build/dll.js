@@ -8,7 +8,8 @@ module.exports = {
     vue: ['vue/dist/vue.esm.js', 'vue-router', 'vuex']
   },
   output: {
-    path: path.join(__dirname, '../public/static'),
+    // 由于copyPlugin会直接把public下的文件直接copy到dist里面去，所有生成dll后
+    path: path.join(__dirname, '../src/components/static'),
     filename: "[name].dll.js",
     library: "[name]_library"
   },

@@ -3,11 +3,19 @@ const WebpackBundleAnalyzer = require("webpack-bundle-analyzer").BundleAnalyzerP
 // dll
 const webpack = require('webpack');
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
+const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
   configureWebpack: (config) => {
     // analyze
-    config.plugins.push(new WebpackBundleAnalyzer())
+    // config.plugins.push(new WebpackBundleAnalyzer())
+
+    // uglifyjs-webpack-plugin
+    config.optimization.minimizer.push(new UglifyjsWebpackPlugin(
+      {
+        test: /\.js(\?.*)?$/i
+      }
+    ))
     /*
       * File                                 Size               Gzipped
 
