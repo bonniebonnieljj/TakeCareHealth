@@ -75,5 +75,8 @@
     "last 2 versions",
     "not dead"
   ],
-  "sideEffects": ["*.css", "@babel/polyfill"]
+  "sideEffects": [
+    "*.css",
+    "@babel/polyfill"
+  ]
 }
