@@ -6,6 +6,7 @@ import ElementUI from "element-ui";
 import locale from "element-ui/lib/locale/lang/zh-CN";
 import "./styles.scss";
 import "@/style/index.scss";
+import "@/plugins"
 import { registAllComponents } from "@/components";
 Vue.use(ElementUI, { locale });
 // import echarts from 'echarts/lib/echarts'

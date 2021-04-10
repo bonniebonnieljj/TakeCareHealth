@@ -1,6 +1,6 @@
 <template>
     <section id="user-info">
-        <div id="avatar"></div>
+        <div id="avatar" @click="print"></div>
         <span class="user-name">{{userName}}</span>
     </section>
 </template>
@@ -12,7 +12,14 @@
             return {
                 userName: '用户名'
             }
+        },
+      methods: {
+        print() {
+          // window.open("_blank")
+          // window.print()
+          this.ExportSavePdf("TakeCareHealth", new Date().getDay() + new Date().getHours());
         }
+      }
     }
 </script>
 
