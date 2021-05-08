@@ -41,6 +41,9 @@ export default {
 // step1: 引入 bluebird.min.js 和html2canvas.min.js
 // step2: 确保父frame和子frame都有唯一的id可以获取Dom和contentWindow
 // step3: 此方法仅处理了嵌套一层子iframe
+
+/* eslint-disable */
+var $ = {'jquery': '临时变量'}
 function printWithIframe(iframeIdOrName) {
   var subIframe = $("#iframeIdOrName")[0].contentWindow
   var subIframeDocument = iframe.document
@@ -104,10 +107,10 @@ function printWithIframe(iframeIdOrName) {
       var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
       if(userAgent.indexOf("trident")>-1){
         var arr = image.split(',');
-        var mine = arr[0].match(/:(.*?);/)[1];
+        var mime = arr[0].match(/:(.*?);/)[1];
         var bstr = atob(arr[1]);
         var n = bstr.length;
-        var u8arr = new Unit8Array(n);
+        var u8arr = new Uint8Array(n);
         while(n--){
           u8arr[n] = bstr.charCodeAt(n);
         }
