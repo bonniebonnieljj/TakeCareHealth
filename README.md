@@ -27,3 +27,4 @@
 ## 小功能
 * - 自动打印当前页面 html2canvas
     - 点击用户图标
+    - 添加支持IE11,和内嵌iframe的jquery的写法
