@@ -35,7 +35,7 @@ export default {
           path: { name: "talk" }
         },
         {
-          title: "私信",
+          title: "功能",
           path: { name: "privateLetter" }
         }
       ]

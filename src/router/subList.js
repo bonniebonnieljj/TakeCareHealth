@@ -24,15 +24,19 @@ const subRouters = [
           import(/* webpackChunkName: "about" */ "@/views/expert")
       },
       {
-        path: "talk",
-        name: "talk",
-        component: () => import(/* webpackChunkName: "about" */ "@/views/talk")
+        path: "tinymce",
+        name: "tinymce",
+        component: () => import(/* webpackChunkName: "about" */ "@/views/tinymce")
       },
       {
         path: "privateLetter",
         name: "privateLetter",
         component: () =>
           import(/* webpackChunkName: "about" */ "@/views/privateLetter")
+      },{
+        path: "/print",
+        name: "print",
+        component: () => import(/* webpackChunkName: "Print" */ "@/views/Print")
       }
     ]
   }
