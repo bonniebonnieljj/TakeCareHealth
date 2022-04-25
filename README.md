@@ -37,3 +37,5 @@
     - 点击功能按钮
     - 打印后，关闭弹窗后，可以执行关闭弹窗的回调
     - 注意： window.print() 捕获不到； window.document.execCommand("print")的返回值只能捕获到外部页面的弹窗关闭事件，iframe中无法捕捉。
+* antv x6支持编辑后保存，重新绘图进行交互
+    - npm install @antv/x6 --save
