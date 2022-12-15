@@ -44,6 +44,11 @@ const subRouters = [
     path: "/antvx6",
     name: "antvx6",
     component: () => import(/* webpackChunkName: "Print" */ "@/views/AntvX6")
+  },
+  {
+    path: "/draggable",
+    name: "draggable",
+    component: () => import(/* webpackChunkName: "draggable" */ "@/views/draggable")
   }
 ];
 export default subRouters;

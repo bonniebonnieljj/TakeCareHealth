@@ -39,3 +39,6 @@
     - 注意： window.print() 捕获不到； window.document.execCommand("print")的返回值只能捕获到外部页面的弹窗关闭事件，iframe中无法捕捉。
 * antv x6支持编辑后保存，重新绘图进行交互
     - npm install @antv/x6 --save
+
+* 拖拽
+    - npm install draggable -S
